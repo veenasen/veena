@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <style>
+            .grid1{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                padding: 20px;
+            }
+            .grid-item{
+                border: 1px solid rgba(0, 0,0, 0.8);
+                padding: 20px;
+            }
+            .grid-item1{
+                grid-column-start: 1;
+                border: 1px solid rgba(0, 0,0, 0.8);
+                padding: 20px;
+            }
+            .grid2{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                padding: 20px; 
+            }
+            .grid3{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                padding: 20px; 
+            }
+            h1{
+                text-align: center;
+                background-color: orangered;
+            }
+            h3{
+                background-color: orange;
+            }
+            .grid-item2{
+                background-color: yellow;
+            }
+            fieldset{
+                background-color: lemonchiffon;
+                width: 500px;
+                margin: auto;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <fieldset>
+        <form>
+            <h1>JOB REGISTRATION FORM</h1>
+        <h3>PERSONAL QUALIFICATION</h3>
+            <div class="grid1">
+                <div class="grid-item"><label>NAME</label>
+                <input type="text" required></div>
+                <div class="grid-item"><label>DATE OF BIRTH</label> 
+                <input type="date" required></div>
+                <div class="grid-item"><label>SOCIAL SECURITY NUMBER</label>
+                <input type="number" required></div>
+                <div class="grid-item"><label>ADDRESS</label>
+                <textarea></textarea></div>
+                <div class="grid-item1"><label>CITY</label>
+                <input type="text" required></div>
+                <div class="grid-item"><label>STATE</label>
+                <input type="text" required></div>
+                <div class="grid-item"><label>ZIP CODE</label>
+                <input type="number" required></div> 
+                <div class="grid-item"><label>PHONE 1</label>
+                <input type="number" required></div>
+                <div class="grid-item"><label>PHONE 2</label>
+                <input type="number" required></div>
+                <div class="grid-item"><label>E-mail</label>
+                <input type="email" required></div>
+                <div>
+                    <p>Have you ever been convicted of a crime other than a minor traffic incident?</p>
+                    <label></label>
+                <input type="checkbox">yes
+                <input type="checkbox">no
+                <p>If yes, please explain:</p>
+                <p>Not Applicable</p>
+                </div>
+            </div>
+            <h3>DESIRED EMPLOYMENT</h3> 
+             <div class="grid2">
+                <div class="grid-item"><label>EMPLOYMENT TYPE</label>
+                <input type="checkbox">Full Time
+                <input type="checkbox">Part Time</div>
+                <div class="grid-item"><label>POSITION APPLYING FOR</label>
+                <input type="text" required></div>
+                <div class="grid-item"><label>DESIGNED SALARY</label>
+                <input type="text"></div>
+                <div class="grid-item"><label>DATE YOU CAN START</label>
+                <input type="date"></div>
+            </div>
+                <h3>EDUCATION (starting from the latest)</h3>
+                <div class="grid2">
+                    <div class="grid-item2">
+                    <p>SCHOOL</p></div>
+                    <div class="grid-item2">
+                    <p>LOCATION</p></div>
+                    <div class="grid-item2">
+                    <p>DATE GRADUATED</p></div>
+                    <div class="grid-item2">
+                    <p>ATTAINMENT</p></div>
+                    <div class="grid-item">
+                    <input type="text" placeholder="<school>" required></div>
+                    <div class="grid-item">
+                    <input type="text" placeholder="<location>" required></div>
+                    <div class="grid-item">
+                    <input type="date" required></div>
+                    <div class="grid-item">
+                    <input type="text" placeholder="<attainment>" required></div>
+                        <div class="grid-item">
+                        <input type="text"  required></div>
+                        <div class="grid-item">
+                        <input type="text" required></div>
+                        <div class="grid-item">
+                        <input type="date" required></div>
+                        <div class="grid-item">
+                        <input type="text"></div> 
+                        <div class="grid-item">
+                        <input type="text"  required></div>
+                        <div class="grid-item">
+                        <input type="text" required></div>
+                        <div class="grid-item">
+                        <input type="date" required></div>
+                        <div class="grid-item">
+                        <input type="text"></div>
+                        <div class="grid-item">
+                            <input type="text"  required></div>
+                            <div class="grid-item">
+                            <input type="text" required></div>
+                            <div class="grid-item">
+                            <input type="date" required></div>
+                            <div class="grid-item">
+                            <input type="text"></div> 
+                                  
+                </div>
+                <h3>WORK EXPERIENCE</h3>
+                <div class="grid2">
+                    <div class="grid-item2">
+                        <p>COMPANY NAME</p></div>
+                        <div class="grid-item2">
+                        <p>PERIOD</p></div>
+                        <div class="grid-item2">
+                        <p>POSITION</p></div>
+                        <div class="grid-item2">
+                        <p>REASON FOR LEAVING</p></div>
+                </div>
+                <div class="grid3">
+                    <div class="grid-item">
+                    <input type="text" placeholder="<company name>" required></div>
+                        <div class="grid-item">
+                        <input type="number" placeholder="<YYYY>" required></div>
+                        <div class="grid-item">
+                        <input type="number" placeholder="<YYYY>" required></div>
+                        <div class="grid-item">
+                        <input type="text" placeholder="<position>"></div>
+                        <div class="grid-item">
+                        <input type="text" placeholder="<reason for leaving>" required></div>
+                </div>
+                <div>
+                    <p>May we contact your present employer?</p>
+                    <input type="checkbox">yes
+                    <input type="checkbox">no<br>
+                    <label>If No,why?</label>
+                    <input type="text">
+                    <label>If yes,name of supervisor:</label>
+                    <input type="text">
+                    <label>Contact Number</label>
+                    <input type="number" placeholder="<telephone no.>">
+                </div>
+                <h3>MAJAOR SKILLS</h3>
+                <div>
+                    <textarea name="veena" id="4" cols="30" rows="10" placeholder="skills"></textarea>
+                </div>
+                <hr>
+                <p><i>i certified that the information contained in this application is accurate and correct.I understand that any amission or erroneous may be ground for dismissal</i></p>
+                <center><button>submit</button></center>
+        </form>
+        </fieldset> 
+    </body>
+</html>

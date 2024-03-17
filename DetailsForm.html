@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <style>
+            .grid{
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 0px 0px 30px 10px;
+                gap: 50px;
+            }
+            .grid-qua{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                padding: 5px;
+                border: 1px solid rgba(0, 0,0, 0.8);
+                width: 140px;
+                height: 30px;
+            }
+            fieldset{
+                width: 800px;
+                height: fit-content;
+                margin: auto;
+                background-color: blueviolet;
+                color: white;
+            }
+            .grid-qua input{
+                width: 140px;
+                text-align: center;
+            }
+            button{
+                background-color: white;
+                color: black;
+                transform: translate(350px , 10%);
+            }
+            /* .right{
+                right: auto;
+            } */
+            /* .right{
+                right: 420;
+                width: 800px;
+                height: 1100px;
+                float: left; 
+                padding: 0px 0px 30px 10px;
+            } */
+            /* .right1{
+                right: 320;
+                width: 500px;
+                height: 1100px;
+                float: left; 
+                padding: 0px 0px 0px 20px;
+            } */
+        </style>
+    </head>
+    <body>
+        <fieldset>
+        <form>
+            <!-- <div class="display"> -->
+            <div class="grid">
+                <div><label>FIRST NAME</label>
+                <input type="text">(max 30 characters a-z and A-Z)</div>
+            </div>
+            <div class="grid">
+                <div><label>LAST NAME</label>
+                <input type="text">(max 30 characters a-z and A-Z)</div>
+            </div>
+            <div class="grid">
+                <div><label>DATE OF BIRTH</label>
+                <input type="date"></div>
+            </div>
+            <div class="grid">
+                <div><label>EMAIL ID</label>
+                <input type="email"></div>
+            </div>
+            <div class="grid">
+                <div><label>MOBILE NUMBER</label>
+                <input type="number" maxlength="10">(10 digit number)</div>
+            </div>
+            <div class="grid">
+                <div><label>GENDER</label>
+                    <input type="radio" name="G">male
+                    <input type="radio" name="G">female</div>
+            </div>
+            <div class="grid">
+                <div><label>ADDRESS</label>
+                <textarea></textarea></div>
+            </div>
+            <div class="grid">
+                <div><label>CITY</label>
+                <input type="text">(max 30 characters a-z and A-Z)</div>
+            </div>
+            <div class="grid">
+                <div><label>PINCODE</label>
+                <input type="number" maxlength="6">(6 digit number)</div>
+            </div>
+            <div class="grid">
+                <div><label>STATE</label>
+                <input type="text">(max 30 characters a-z and A-Z)</div>
+            </div>
+            <div class="grid">
+                <div><label>COUNTRY</label>
+                <input type="text"></div>
+            </div>
+            <div class="grid">
+                <div><label>HOBBIES</label>
+                    <input type="checkbox">Drawing
+                    <input type="checkbox">Singing
+                    <input type="checkbox">Dancing
+                    <input type="checkbox">Sketching
+                    <input type="checkbox">others
+                    <input type="text"></div>
+            </div>
+            <!-- <div class="grid"> -->
+                <div><label>QUALIFICATION</label></div><br>
+                <div class="right grid-qua">
+                    <div class="grid-qua"><p>SI.NO.</p></div>
+                    <div class="grid-qua"><p>Examination</p></div>
+                    <div class="grid-qua"><p>Board</p></div>
+                    <div class="grid-qua"><p>Percentage</p></div>
+                    <div class="grid-qua"><p>Year of Passing</p></div>
+                </div>
+            <!-- </div> -->
+            <div class="right1 grid-qua">
+                <div class="grid-qua"><p>1</p></div>
+                <div class="grid-qua"><p>Class X</p></div>
+                <div class="grid-qua"><input type="text"></div>
+                <div class="grid-qua"><input type="text"></div>
+                <div class="grid-qua"><input type="text"></div>
+            </div>
+            <div class="right1 grid-qua">
+                <div class="grid-qua"><p>2</p></div>
+                <div class="grid-qua"><p>Class XII</p></div>
+                <div class="grid-qua"><input type="text"></div>
+                <div class="grid-qua"><input type="text"></div>
+                <div class="grid-qua"><input type="text"></div>
+            </div>
+            <div class="right1 grid-qua">
+                <div class="grid-qua"><p>3</p></div>
+                <div class="grid-qua"><p>Graduation</p></div>
+                <div class="grid-qua"><input type="text"></div>
+                <div class="grid-qua"><input type="text"></div>
+                <div class="grid-qua"><input type="text"></div>
+            </div>
+            <div class="right1 grid-qua">
+                <div class="grid-qua"><p>4</p></div>
+                <div class="grid-qua"><p>Masters</p></div>
+                <div class="grid-qua"><input type="text"></div>
+                <div class="grid-qua"><input type="text"></div>
+                <div class="grid-qua"><input type="text"></div>
+            </div><br>
+            <div class="grid">
+                <div><label>COURSES APPLIED FOR</label>
+                    <input type="radio" name="G">BCA
+                    <input type="radio" name="G">B.Com
+                    <input type="radio" name="G">B.Sc
+                    <input type="radio" name="G">B.A</div>
+            </div>
+            <div>
+                <button>Submit</button>
+                <button>Reset</button>
+            </div>
+        <!-- </div> -->
+        </form>
+    </fieldset>
+    </body>
+</html>

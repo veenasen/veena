@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <style>
+            .bgimage{
+                background-image: url(./HTML/assets/solarimg.jpg);
+                background-color: #cccccc;
+                height: 600px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            .topnav a {
+                float: right;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                /* font-size: 17px; */
+                background-color: none;
+                display: flex;
+            }
+            ul{
+                display: flex;
+                float: left;
+            }
+            img{
+                width: 150px;
+                height: 150px;
+                /* display: block;
+                margin-left: auto;
+                margin-right: auto; */
+                /* mix-blend-mode: multiply;
+                filter: contrast(100%); */
+                border-radius: 100px;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+            }
+            /* img:hover{
+                width: 260px;
+                height: 210px;
+                border-radius: 20px;
+            } */
+            th{
+                border: 1px solid rgb(18, 18, 54);
+                gap: 20px;
+                width: 450px;
+                background-color: rgb(237, 105, 22);
+                color: white;
+                font-weight: bolder;
+            }
+            .mercury{
+                transform: translate(5px , -100%);
+                width: 250px;
+                height: 200px;
+            }
+            /* .mercury:hover.img{
+                width: 250px;
+                height: 200px;
+            } */
+            /* .t-mercury{
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .container1:hover .image {
+                opacity: 0.3;
+            }
+
+            .container:hover .t-mercury {
+                opacity: 1;
+            } */
+            .venus{
+                transform: translate(80px , -120%);
+                width: 240px;
+                height: 190px;
+            }
+            .venus :hover{
+                width: 250px;
+                height: 200px;
+            }
+            .earth{
+                transform: translate(280px , -170%);
+                width: 230px;
+                height: 170px;
+            }
+            .mars{
+                transform: translate(520px , -270%);
+                width: 210px;
+                height: 160px;
+            }
+            .jupitar{
+                transform: translate(750px , -390%);
+                width: 200px;
+                height: 150px;
+            }
+            .saturn{
+                transform: translate(970px , -603%);
+                width: 190px;
+                height: 140px;
+            }
+            .uranus{
+                transform: translate(1060px , -885%);
+                width: 180px;
+                height: 130px;
+            }
+            .neptune{
+                transform: translate(1150px , -1020%);
+                width: 170px;
+                height: 140px;
+            }
+            .sun{
+                transform: translate(-150px , 20%);
+                width: 300px;
+                height: 300px;
+                border-radius: 157px;
+            }
+            .moon{
+                width: 300px;
+                height: 300px;
+            }
+            .aside-left{
+                float: left;
+            }
+            fieldset{
+                width: 50%;
+            }
+            .aside-right{
+                float: right;
+                transform: translate(300px , -40%);
+            }
+            .solar-content{
+                text-align: center;
+                width: 60%;
+                font-size: 25px;
+                transform: translate(20px , -50%);
+            }
+            .planets h1{
+                text-align: center;
+                color: rgb(237, 105, 22);
+            }
+            .planets{
+                transform: translate(10px , -70%);
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                padding: 10px 20px;
+                gap: 20px;
+                background-color: white;
+                width: fit-content;
+                margin: auto;
+            }
+            .grid-item{
+                width: 70%;
+                border: 10px solid rgb(237, 105, 22);
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .grid-item h2{
+                text-align: center;
+            }
+            /* .field-moon{
+                
+            } */
+        </style>
+    </head>
+   <body>
+    <div class="bgimage">
+        <div class="content">
+            <div class="topnav">
+                <ul>
+                    <a href="#solarsystem">SOLAR SYSTEM</a>
+                    <a href="#planets">PLANETS</a>
+                    <a href="#moons">MOONS</a>
+                    <a href="#asteroids,cosmetics&meteroids">ASTEROIDS,COSMETICS&METEROIDS</a>
+                    <a href="#more">MORE</a>
+                </ul>
+            </div>
+            <!-- <img src="./HTML/assets/moon_new.png" class="moon"> -->
+            <img src="./HTML/assets/sun.gif" class="sun">
+            <img src="./HTML/assets/mercury_new.png" class="mercury">
+            <img src="./HTML/assets/venus_new.png" class="venus">
+            <img src="./HTML/assets/earth_new.png" class="earth">
+            <img src="./HTML/assets/mars_new.png" class="mars">
+            <img src="./HTML/assets/jupiter_new.png" class="jupitar">
+            <img src="./HTML/assets/saturn_new.png" class="saturn">
+            <img src="./HTML/assets/uranus_new.png" class="uranus">
+            <img src="./HTML/assets/neptune_new.png" class="neptune">
+        </div>
+      </div>
+      <table>
+        <tr>
+            <th id="id1">PLANETS | DWARF PLANETS<br><br>8 | 5</th>
+            <th id="id1">MOONS<br><br>200+</th>
+            <th id="id1">ASTEROIDS<br>><br>1,298,442</th>
+            <th id="id1">COMETS<br><br>3,881</th>
+        </tr>
+    </table><br>
+    <div class="aside-left">
+        <aside>
+            <fieldset>
+                <legend>solar system</legend>
+                <h1>Why is it Called the Solar System?</h1>
+                <p>There are many planetary systems like ours in the universe, with planets orbiting a host star. Our planetary system is called “the solar system” because we use the word “solar” to describe things related to our star, after the Latin word for Sun, "solis."</p>
+            </fieldset>
+        </aside>
+    <div class="aside-right">
+        <aside>
+            <fieldset class="field-moon">
+                <h1>EARTH's MOON</h1>
+                <img src="./HTML/assets/moon_new.png" class="moon">
+                <p>The fifth largest moon in the solar system, Earth's moon is the only place beyond Earth where humans have set foot.</p>
+            </fieldset>
+        </aside>
+    </div>
+    </div>
+    <div class="solar-content">
+        <p>Our planetary system is located in an outer spiral arm of the Milky Way galaxy.<br><br>Our solar system consists of our star, the Sun, and everything bound to it by gravity – the planets Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune; dwarf planets such as Pluto; dozens of moons; and millions of asteroids, comets, and meteoroids. Beyond our own solar system, we have discovered thousands of planetary systems orbiting other stars in the Milky Way</p>
+    </div>
+    <div class="planets">
+        <h1>PLANETS IN OUR SOLAR SYSTEM</h1>
+        <div class="grid">
+            <div class="grid-item">
+                <h2>MERCURY</h2>
+                <p>From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as 11 times brighter.</p>
+            </div>
+            <div class="grid-item">
+                <h2>VENUS</h2>
+                <p>Similar in structure and size to Earth, Venus's thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system.</p>
+            </div>
+            <div class="grid-item">
+                <h2>EARTH</h2>
+                <p>Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</p>
+            </div>
+            <div class="grid-item">
+                <h2>MARS</h2>
+                <p>Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was – billions of years ago – wetter and warmer, with a thicker atmosphere.</p>
+            </div>
+            <div class="grid-item">
+                <h2>JUPITAR</h2>
+                <p>Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red Spot is a centuries-old storm bigger than Earth.</p>
+            </div>
+            <div class="grid-item">
+                <h2>SATURN</h2>
+                <p>Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's.</p>
+            </div>
+            <div class="grid-item">
+                <h2>URANUS</h2>
+                <p>Uranus—seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side.</p>
+            </div>
+            <div class="grid-item">
+                <h2>NEPTUNE</h2>
+                <p>Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations.</p>
+            </div>
+        </div>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            .topnav a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                /* font-size: 17px; */
+                background-color: none;
+                display: flex;
+            }
+            .topnav a:hover {
+                background-color: rgb(158, 237, 158);
+                color: black;
+            }
+            .topnav a.active {
+                background-color: green;
+                color: black;
+                float: right;
+            }
+            ul{
+                display: flex;
+                float: left;
+            }
+            img{
+                /* border-radius: 100px; */
+                height: 300px;
+                width: 300px;
+                transform: translate(-500px , 60%);
+                border: 5px solid green;
+            }
+            h1,h3{
+                color: green;
+            }
+            p{
+                color: white;
+                width: 900px;
+                height: 20px;
+            }
+            .content{
+                transform: translate(600px , -50%);
+            }
+            #id{
+                color: white;
+            }
+            button{
+                color: green;
+                border-color: green;
+                height: 30px;
+                background-color: black;
+            }
+            #web{
+                color: white;
+            }
+            .right{
+                float: right;
+                transform: translate(850px , 20%);
+            }
+            li:last-child {
+            border-right: none;
+            float: right;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            
+                <ul>
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#services">SERVICES</a>
+                    <a href="#blog">BLOG</a>
+                    <a href="#more">MORE</a>
+                    <a class="active right" href="#contact">CONTACT</a>
+                </ul></div><br>
+                <div><img src="./HTML/assets/avatar.jpg"></div>
+                <div class="content">
+                    <h3>CODEWITHRANDOM</h3>
+                    <h1 id="web">I'am a web</h1>
+                    <h1>Developer</h1>
+                    <p>Explore new areas and work in a dynamic world with a stable organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization's objectives and growth</p><br>
+                    <button>DOWNLOAD CV</button>
+                </div>
+    </body>
+</html>

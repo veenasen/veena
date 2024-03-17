@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            h1{
+                text-align: center;
+            }
+            button{
+                background-image: linear-gradient(lightblue,blue);
+                border-radius: 50px;
+                color: white;
+                text-align: center;
+                width: 200px;
+                height: 35px;
+                margin: auto;
+                font-size: medium;
+                letter-spacing: 4px;
+                font-style:inherit;
+            }
+            fieldset{
+                border-radius: 25px;
+                width: 300px;
+                height: 350px;
+                background-color: white;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%)
+                /* background: transparent; */
+                /* margin: auto; */
+                /* justify-content: center; */
+            }
+            .signup{
+                text-align: center;
+            } 
+            /* #back{
+                background-image: linear-gradient(lightblue,blue);
+                width: 600px;
+                height: 550px;
+            }  */
+            body{
+                background-image: linear-gradient(lightblue,blue);
+                /* background-size: 50% 50%; */
+                margin: auto;
+            }
+            /* form{
+                justify-content: center;
+                margin: auto;
+            } */
+            .box{
+                border: 0;
+                border-bottom: 2px solid rgba(38, 12, 239, 0.92);
+                border-radius: 4px;
+                width: 250px;
+                font-size: medium;
+                margin-bottom: 10px;
+                /* background: transparent; */
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <form method="get">
+                <h1>LOGIN</h1>
+                <hr><br>
+                <!-- <input class="input-field" type="text" placeholder="username" name="username"/>
+                <input class="input-field" type="password" placeholder="password" name="password"/> -->
+                <input class="box" type="text" placeholder="Username" required><br><br>
+                <input class="box" type="text" placeholder="Password" required><br><br>
+                <div><a href="#password">Forget Password?</a></div><br><br>
+                <button>Login</button><br>
+                <div class="signUp"><h3>Not a Member?<a href="#signup">SignUp</a></h3></div>
+            </form>
+        </fieldset>
+        <div id="back"></div>
+    </body>
+</html>

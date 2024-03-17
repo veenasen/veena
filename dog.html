@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(30, 77, 77);
+            }
+            input{
+                background-color: blueviolet;
+                color: white;
+                transform: translate(550px , 70%);
+                width: 350px;
+                height: 40px;
+            }
+            input::placeholder{
+                color: white;
+            }
+            button{
+                background-color: red;
+                color: white;
+                width: 100px;
+                height: 40px;
+                transform: translate(550px ,69%);
+            }
+            h1{
+                color: white;
+                text-align: center;
+                /* font-size: 40px; */
+            }
+            p{
+                color: darkgrey;
+                text-align: center;
+                transform: translate(10px , 100%);
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                width: fit-content;
+                gap: 20px;
+                margin: auto;
+            }
+            img{
+                width: 250px;
+                height: 200px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div><h1>Image Search Engine</h1></div>
+        <input type="text" placeholder="dog">
+        <button>Search</button>
+        <p>*Images comes from Unsplash Website</p><br><br><br>
+        <div class="grid">
+            <div class="grid-item"><img src="./HTML/assets/dog1.jpg"></div>
+            <div class="grid-item"><img src="./HTML/assets/dog6.jpg"></div>
+            <div class="grid-item"><img src="./HTML/assets/dog2.jpg"></div>
+            <div class="grid-item"><img src="./HTML/assets/dog3.jpg"></div>
+            <div class="grid-item"><img src="./HTML/assets/dog4.jpg"></div>
+            <div class="grid-item"><img src="./HTML/assets/dog5.jpg"></div>
+        </div>
+    </body>
+</html>

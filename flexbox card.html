@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(243, 159, 4);
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                padding: 20px;
+                gap: 20px;
+                width: fit-content;
+                height: 100px;
+                margin: auto;
+                
+                /* position: relative;
+                transform: translate(-50%, -50%) */
+            }
+            /* img#no-background{
+                background-image: none;
+            } */
+            img{
+                width: 100px;
+                height: 100px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                mix-blend-mode: multiply;
+                filter: contrast(1);
+                border-radius: 100px;
+                /* border-color: rgb(243, 159, 4) ; */
+                border: 5px solid rgb(243, 159, 4);
+                padding: 10px;
+            }
+            /* .hide-bg{
+            mix-blend-mode: multiply;
+            filter: contrast(1);
+            } */
+            p{
+                width: 200px;
+                text-align: center;
+            }
+            .grid-item{
+                border: 1px solid rgba(0, 0,0, 0.8);
+                padding: 20px;
+                gap: 20px;
+                background-color:rgb(250, 221, 166);
+            }
+            h3{
+                text-align: center;
+                font-weight: bolder;
+            }
+            h1{
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                letter-spacing: 10px;
+                font-size:xx-large;
+                font: bolder;
+                color: rgb(64, 33, 12);
+            }
+        </style>
+    </head>
+    <body><br><br>
+        <h1>CSS Flexbox Cards</h1>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="./HTML/assets/angular1logo.png">
+                <h3>Angular</h3>
+                <p>Angular is a platform for building mobile and desktop web applications. Join th community of millions of developers who build compelling user interfaces with Angular.</p>
+            </div>
+            <div class="grid-item">
+                <img src="./HTML/assets/react1logo.png">
+                <h3>React</h3>
+                <p>React is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies.</p>
+            </div>
+            <div class="grid-item">
+                <img src="./HTML/assets/vue1logo.png">
+                <h3>Vue</h3>
+                <p>Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.</p>
+            </div>
+        </div>
+    </body>
+</html>
